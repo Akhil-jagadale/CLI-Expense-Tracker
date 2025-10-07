@@ -24,30 +24,12 @@ This project demonstrates **end-to-end cloud integration** with **AWS S3** for d
 | Category | Technologies |
 |-----------|--------------|
 | **Language** | Python 3.x |
-| **Core Libraries** | `csv`, `datetime`, `os` |
+| **Core Libraries** |`datetime`, `os` |
 | **AWS Services** | S3 (Data Storage), CloudWatch (Logging) |
 | **AWS SDK** | `boto3` |
 | **Containerization** | Docker |
-| **Testing** | `pytest`, `unittest.mock` |
+| **Testing** | `pytest'|
 | **Version Control** | Git & GitHub |
-
----
-
-## 🧱 Architecture
-
-```mermaid
-graph TD;
-    A[CLI Input] --> B[Logic Layer];
-    B --> D[AWS S3 Backup];
-    C --> E[CloudWatch Logs];
-    subgraph Containerized Execution
-    A
-    B
-    C
-    end
-    D --> F[AWS Cloud Storage];
-    E --> G[Operational Logs];
-````
 
 ---
 
