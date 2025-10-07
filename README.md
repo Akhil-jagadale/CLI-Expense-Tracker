@@ -1,10 +1,3 @@
-Perfect — since your **Expense Tracker CLI** project is also **Dockerized**, let’s make your `README.md` even more professional by integrating that detail cleanly into every relevant section.
-
-Below is the **final, polished `README.md`** — fully ready for GitHub, reflecting Python + AWS + Docker integration 👇
-
----
-
-````markdown
 # 💰 AWS-Integrated Expense Tracker CLI
 
 A **Dockerized Python Command Line Interface (CLI)** application for tracking, managing, and persisting expenses.  
