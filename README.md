@@ -167,5 +167,3 @@ pytest tests/
 * Enable **multi-user authentication** with AWS Cognito
 
 ---
-Would you like me to add **Docker and AWS badges** (for Python, AWS, Docker, License, etc.) at the top — to give your GitHub repo a more polished, professional header section like popular open-source projects?
-```
