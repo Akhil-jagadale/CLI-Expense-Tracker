@@ -38,9 +38,8 @@ This project demonstrates **end-to-end cloud integration** with **AWS S3** for d
 ```mermaid
 graph TD;
     A[CLI Input] --> B[Logic Layer];
-    B --> C[Local CSV File];
-    C --> D[AWS S3 Backup];
-    B --> E[CloudWatch Logs];
+    B --> D[AWS S3 Backup];
+    C --> E[CloudWatch Logs];
     subgraph Containerized Execution
     A
     B
