@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo "Add your deployment steps here, e.g., AWS CLI commands"
+                sh 'aws s3 cp some_artifact.zip s3://yourbucket/'
             }
         }
     }
