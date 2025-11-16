@@ -8,18 +8,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './build.sh'   // Adjust for your environment
+                sh 'pip install -r requirements.txt || true'
             }
         }
         stage('Test') {
             steps {
-                sh './test.sh'
+                sh 'python test_logic.py'
             }
         }
         stage('Deploy') {
             steps {
-                sh './deploy.sh'  // Deployment script
-                // OR AWS CLI commands instead
+                echo "Add your deployment steps here, e.g., AWS CLI commands"
             }
         }
     }
@@ -34,6 +33,7 @@ pipeline {
             mail to: 'jagadaleakhilesh@gmail.com',
                 subject: "Jenkins Build Failed",
                 body: "See details: ${env.BUILD_URL}"
+            }
         }
     }
 }
