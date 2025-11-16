@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/yourusername/yourapp.git'
+                git 'https://github.com/Akhil-jagadale/CLI-Expense-Tracker.git'
             }
         }
         stage('Build') {
